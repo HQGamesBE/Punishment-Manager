@@ -19,14 +19,14 @@ use pocketmine\utils\SingletonTrait;
 
 
 /**
- * Class pluginname
+ * Class PunishmentManager
  * @package HQGames\plugin_name
  * @author Jan Sohn / xxAROX
  * @date 22. July, 2022 - 20:40
  * @ide PhpStorm
  * @project Plugin-Template
  */
-class plugin_name extends PluginBase{
+class PunishmentManager extends PluginBase{
 	use SingletonTrait{
 		setInstance as private static;
 		reset as private;
@@ -60,7 +60,6 @@ class plugin_name extends PluginBase{
 	 * @return void
 	 */
 	public function onEnable(): void{
-		$this->registerAddons();
 		$this->registerCommands();
 		$this->registerListeners();
 
@@ -73,24 +72,6 @@ class plugin_name extends PluginBase{
 	 */
 	public function onDisable(): void{
 		$this->getLogger()->info("Disabled");
-	}
-
-	/**
-	 * Function registerAddons
-	 * @return void
-	 */
-	private function registerAddons(): void{
-		new AddonManager($this);
-		$addons = [
-		];
-		foreach ($addons as $addon) {
-			if (!class_exists($addon)) {
-				$this->getLogger()->error("Addon '{$addon}' is not found!");
-				continue;
-			}
-			AddonManager::getInstance()->registerAddon($addon);
-			$this->getLogger()->debug("Addon '{$addon}' is registered!");
-		}
 	}
 
 	/**
