@@ -1,9 +1,9 @@
-name: "plugin_name"
+name: "Punishment-Manager"
 version: "1.0"
 author: "xxAROX"
-website: "https://github.com/HQGames/"
-description: "plugin_name for HQGames by xxAROX."
+website: "https://github.com/HQGames/Punishment-Manager"
+description: "Punishment-Manager for HQGames by xxAROX."
 
 api:
   - "4.0.0"
-main: HQGames\plugin_name\plugin_name
+main: HQGames\PunishmentManager\PunishmentManager
