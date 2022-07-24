@@ -29,6 +29,14 @@
         },
         {
             "type": "vcs",
+            "url":  "git@github.com:HQGamesBE/Language-Manager.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:HQGamesBE/Report-Manager.git"
+        },
+        {
+            "type": "vcs",
             "url":  "git@github.com:xxAROX/plugin-security.git"
         }
     ],
@@ -40,6 +48,8 @@
         "pocketmine/pocketmine-mp": "^4.6",
         "xxarox/plugin-security": "dev-main",
         "hqgames/core": "dev-main",
-        "hqgames/bridge": "dev-main"
+        "hqgames/bridge": "dev-main",
+        "hqgames/language-manager": "dev-main",
+        "hqgames/report-manager": "dev-main"
     }
 }
